@@ -1,0 +1,17 @@
+{
+  "name": "rocketseat-js6",
+  "version": "1.0.0",
+  "description": "curso js6+ da rocketseat",
+  "main": "index.js",
+  "repository": "https://github.com/vanialadev/rocketseat-js6.git",
+  "author": "Vânia Almeida <vania.almeida28@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}
