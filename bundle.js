@@ -1,15 +1,33 @@
 "use strict";
 
-function soma(x, y) {
-  return x + y;
+var usuario = {
+  nome: "Diego",
+  idade: 23,
+  endereco: {
+    cidade: "fortaleza",
+    uf: "Ceará"
+  }
+};
+var nome = usuario.nome,
+    idade = usuario.idade,
+    _usuario$endereco = usuario.endereco,
+    cidade = _usuario$endereco.cidade,
+    uf = _usuario$endereco.uf;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+console.log(uf);
+
+function mostraNome() {
+  console.log(usuario.nome);
 }
 
-console.log(soma(1));
-
-function somaDefault() {
-  var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 9;
-  return x + y;
+function mostraNome2(_ref) {
+  var nome = _ref.nome,
+      idade = _ref.idade;
+  console.log(nome);
+  console.log(idade);
 }
 
-console.log(somaDefault(1));
+mostraNome(usuario);
+mostraNome2(usuario);

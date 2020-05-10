@@ -1,11 +1,28 @@
-function soma(x, y) {
-    return x + y;
+const usuario = {
+  nome: "Diego",
+  idade: 23,
+  endereco: {
+    cidade: "fortaleza",
+    uf: "Ceará",
+  },
+};
+
+const { nome, idade, endereco: { cidade, uf } } = usuario;
+
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+console.log(uf);
+
+
+function mostraNome() {
+  console.log(usuario.nome);
 }
 
-console.log(soma(1))
-
-function somaDefault(x = 3, y = 9) {
-    return x + y;
+function mostraNome2( {nome, idade}) {
+  console.log(nome);
+  console.log(idade);
 }
 
-console.log(somaDefault(1))
+mostraNome(usuario);
+mostraNome2(usuario);
