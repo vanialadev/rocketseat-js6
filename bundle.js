@@ -17,3 +17,5 @@ var find = arr.find(function (item) {
   return item === 6;
 });
 console.log(find);
+
+var test = function test() {};
