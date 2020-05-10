@@ -1,21 +1,15 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 8, 9];
-var newArr = arr.map(function (item, index) {
-  return item * index;
-});
-console.log(newArr);
-var sum = arr.reduce(function (total, proximo) {
-  return total + proximo;
-});
-console.log(sum);
-var filter = arr.filter(function (item) {
-  return item % 2 === 0;
-});
-console.log(filter);
-var find = arr.find(function (item) {
-  return item === 6;
-});
-console.log(find);
+function soma(x, y) {
+  return x + y;
+}
 
-var test = function test() {};
+console.log(soma(1));
+
+function somaDefault() {
+  var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 9;
+  return x + y;
+}
+
+console.log(somaDefault(1));
